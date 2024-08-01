@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --lg-font: "Kaisei Tokumin", serif;
+    --sm-font: "Poppins", sans-serif;
+    --pink: #e5345b;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--sm-font);
+    padding: 0;
+    margin: 0;
+    cursor: url("../imgs/arrow-cursor.svg"), auto;
+}
+
+ul{
+    list-style-type: none;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--pink);
+    border-radius: 4px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #e5345a7e;
+}
+
+::-moz-selection {
+    /* Code for Firefox */
+    color: white;
+    background: var(--pink);
+}
+
+::selection {
+    color: white;
+    background: var(--pink);
+}
+
+.bg-primary {
+    background-color: var(--pink) !important;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover,
+i:hover,
+a:hover,
+.btn:hover {
+    cursor: url(../imgs/hand-pointer.svg), auto;
+}
+
+.btn:not(.nav-btns button) {
+    background-color: #fff;
+    color: rgb(85, 85, 85);
+    padding: 10px 28px;
+    border-radius: 25px;
+    border: 1px solid rgb(85, 85, 85);
+}
+
+.btn:not(.nav-btns button):hover {
+    background-color: var(--pink);
+    color: #fff;
+    border-color: var(--pink);
+}
+
+.text-primary {
+    color: var(--pink) !important;
+}
+
+
+
+.navbar {
+    box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand>img {
+    width: 30px;
+}
+
+.navbar-brand span {
+    letter-spacing: 2px;
+    font-family: var(--lg-font);
+}
+
+@media(max-width: 400px) {
+    .navbar-brand span {
+        font-size: 14px;
+    }
+}
+
+.nav-link {
+    font-family: var(--sm-font);
+}
+
+.nav-link:hover {
+    color: var(--pink) !important;
+}
+
+.nav-item {
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
+}
+
+@media (min-width: 992px) {
+    .nav-item {
+        border-bottom: none;
+    }
+}
+
+.navbar-nav li {
+    position: relative;
+}
+
+.navbar-nav li a::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0px;
+    background-color: var(--pink);
+    left: 0;
+    top: calc(100% + 13px);
+    transition: all 0.3s ease;
+    border-radius: 1px;
+}
+
+.navbar-nav li>a:hover::after {
+    width: 100%;
+}
+
+
+#header {
+    background: url(../imgs/banner-img-1.jpg) top/cover no-repeat;
+}
+
+.carousel-inner h1 {
+    font-size: 60px;
+    font-family: var(--lg-font);
+}
+
+.carousel-item .btn {
+    border-color: #fff !important;
+}
+
+.carousel-item .btn:hover {
+    border-color: var(--pink) !important;
+}
+
+
+.title h2::before {
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 50px;
+    background-color: var(--pink);
+    left: -20px;
+    top: 50px;
+    transform: translateY(-54px);
+    z-index: -1;
+    transition: all 0.3s ease;
+}
+
+.title h2:hover {
+    color: white;
+}
+
+.title h2:hover::before {
+    width: 120%;
+}
+
+.active-filter-btn {
+    background-color: var(--pink) !important;
+    color: #fff !important;
+    border-color: var(--pink) !important;
+}
+
+.filter-button-group .btn:hover {
+    color: #fff !important;
+}
+
+.collection-img span {
+    top: 20px;
+    right: 20px;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+}
+
+.special-img span {
+    top: 20px;
+    right: 20px;
+}
+
+.special-list .btn {
+    padding: 8px 20px !important;
+}
+
+.special-img img {
+    transition: all 0.3s ease;
+}
+
+.special-img img:hover {
+    transform: scale(1.2);
+}
+
+#offers {
+    background: url(../imgs/offer_img.jpg) center/cover no-repeat;
+}
+
+#offers .row {
+    min-height: 60vh;
+}
+
+.offers-content span {
+    font-size: 28px;
+}
+
+.offers-content h2 {
+    font-size: 60px;
+    font-family: var(--lg-font);
+}
+
+.offers-content .btn {
+    border-color: transparent !important;
+}
+
+#about {
+    background-color: rgba(0, 0, 0, 0.005);
+}
+
+#newsletter {
+    background-color: rgba(179, 179, 179, 0.05);
+}
+
+#newsletter p {
+    max-width: 600px;
+}
+
+#newsletter .input-group {
+    max-width: 500px;
+}
+
+#newsletter .form-control {
+    border-top-left-radius: 25px;
+    border-top-left-radius: 25px;
+}
+
+#newsletter .btn {
+    background-color: var(--pink);
+    color: #fff;
+    border-color: var(--pink);
+}
+
+#newsletter .btn:hover {
+    background-color: #000;
+    border-color: #000;
+}
+
+footer .brand{
+    font-family: var(--lg-font);
+    letter-spacing: 2px;
+}
+footer{
+    color: white !important;
+}
+footer ul{
+    padding: 0;
+}
+footer a{
+    transition: all 0.3s ease;
+}
+
+footer a:hover{
+    color: var(--pink) !important;
+}
