@@ -97,8 +97,11 @@ a:hover,
     font-family: var(--lg-font);
 }
 
-@media(max-width: 400px) {
+@media(max-width: 420px) {
     .navbar-brand span {
+        font-size: 16px;
+    }
+    .navbar .nav-btns i{
         font-size: 14px;
     }
 }
